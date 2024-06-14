@@ -19,11 +19,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot%202024-06-14%20at%2014-44-15%20Frontend%20Mentor%20Order%20summary%20card.png)
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [Order Summary Component](https://gideon-w.github.io/Order-Summary-Component/)
 
 ### Built with
 
