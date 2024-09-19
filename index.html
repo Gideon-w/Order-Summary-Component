@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
-  
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <div class="container">
-    <figure>
-      <img src="images/illustration-hero.svg" alt="Hero Image" width="450" height="220">
-    </figure>
-    <div class="info-wrapper">
-      <article class="info">
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks,
-          and podcasts on any device anywhere you like!
-        </p>
-      </article> 
-  
-      <article class="plan-wrapper">
-        <img src="images/icon-music.svg" alt="Music Icon">
-        <span class="plan">
-          <strong>Annual Plan</strong>
-          $59.99/year
-        </span>
-        <a href="#">Change</a>
-      </article>
-  
-      <a href="#" class="proceed-payment">Proceed to Payment</a>
-      <a href="#" class="cancel-order">Cancel Order</a>
-    </div>
-  </div>
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <!-- Main content should be wrapped in <main> for semantic structure -->
+    <main class="container">
+      <!-- Use more descriptive alt text for images -->
+      <figure>
+        <img
+          src="images/illustration-hero.svg"
+          alt="Illustration of a hero image related to the order summary"
+          width="450"
+          height="220"
+        />
+      </figure>
 
-  
-  
-  <footer class="attribution">
-    Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
-    Coded by: <a href="https://www.frontendmentor.io/profile/Gideon-w">Gideon-w</a>.
-  </footer>
-</body>
+      <div class="info-wrapper">
+        <article class="info">
+          <!-- Heading structure should start from <h1> for the main title -->
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </article>
+
+        <!-- Alt text for icon and use more descriptive link text -->
+        <article class="plan-wrapper">
+          <img
+            src="images/icon-music.svg"
+            alt="Music icon representing the selected plan"
+          />
+          <span class="plan">
+            <strong>Annual Plan</strong>
+            $59.99/year
+          </span>
+          <a href="#" aria-label="Change subscription plan">Change</a>
+          <!-- Added aria-label for clearer link text -->
+        </article>
+
+        <!-- These links could be marked as buttons for better semantics -->
+        <a
+          href="#"
+          class="proceed-payment"
+          role="button"
+          aria-label="Proceed to payment"
+          >Proceed to Payment</a
+        >
+        <!-- Added role and aria-label -->
+        <a
+          href="#"
+          class="cancel-order"
+          role="button"
+          aria-label="Cancel your order"
+          >Cancel Order</a
+        >
+        <!-- Added role and aria-label -->
+      </div>
+    </main>
+
+    <!-- Footer for attribution -->
+    <footer class="attribution">
+      Challenge by:
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >.<br />
+      Coded by:
+      <a href="https://www.frontendmentor.io/profile/Gideon-w">Gideon-w</a>.
+    </footer>
+  </body>
 </html>
