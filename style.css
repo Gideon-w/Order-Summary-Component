@@ -144,7 +144,7 @@
     font-weight: var(--FW-Normal);
     color: #333;
   }
-  .attribution a {
+  .attribution a:link {
     color: hsl(228, 45%, 44%);     
   }
 
